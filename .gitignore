@@ -1,0 +1,6 @@
+Web-Cypress/node_modules/
+API-playwright/test-results/
+API-playwright/playwright-report/
+API-playwright/blob-report/
+API-playwright/playwright/.cache/
+API-playwright/node_modules/
