@@ -45,8 +45,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run performance test
-        uses: grafana/k6-action@v0.3.0
+        uses: grafana/k6-action@v0.3.1
         with:
-          working-directory: ./Performance
-          command: k6 run performance-test.js
+          filename: ./Performance/performance-test.js
 
