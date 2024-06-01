@@ -32,7 +32,7 @@ jobs:
       - name: Run tests
         with:
          working-directory: ./Web
-         run: npx playwright test
+         command: npm run test
 
   Performance-Test:
     timeout-minutes: 120
