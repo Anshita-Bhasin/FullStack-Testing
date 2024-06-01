@@ -30,8 +30,7 @@ jobs:
       - name: Install and run  playwright browsers
         run: npx playwright install --with-deps
       - name: Run tests
-        with:
-         command: ./Web/npm run test
+        run: ./Web/npm run test
 
 
   Performance-Test:
