@@ -26,10 +26,13 @@ jobs:
         uses: actions/checkout@v4
       - uses: actions/setup-node@v3
       - name: Install dependencies
-        run: ./Web/npm ci
+        working-directory: ./Web
+        run: npm ci
       - name: Install and run  playwright browsers
+        working-directory: ./Web
         run: npx playwright install --with-deps
       - name: Run tests
+        working-directory: ./Web
         run: ./Web/npm run test
 
 
