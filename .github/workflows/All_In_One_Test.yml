@@ -17,6 +17,21 @@ jobs:
           working-directory: ./API
           command: npm run test
 
+  Web-Test:
+    timeout-minutes: 120
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: Install and run  playwright browsers
+        run: npx playwright install --with-deps
+      - name: Run tests
+        with:
+         command: ./Web/npm run test
 
 
   Performance-Test:
