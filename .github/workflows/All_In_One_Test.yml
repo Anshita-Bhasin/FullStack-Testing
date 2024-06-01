@@ -33,7 +33,7 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run tests
         working-directory: ./Web
-        run: ./Web/npm run test
+        run: npm run test
 
 
   Performance-Test:
