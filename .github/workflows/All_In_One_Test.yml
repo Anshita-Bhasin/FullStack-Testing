@@ -47,5 +47,6 @@ jobs:
       - name: Run performance test
         uses: grafana/k6-action@v0.3.0
         with:
-          filename: ./Performance/performance-test.js
+          working-directory: ./Performance
+          filename: performance-test.js
 
