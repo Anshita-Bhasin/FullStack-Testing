@@ -48,5 +48,5 @@ jobs:
         uses: grafana/k6-action@v0.3.0
         with:
           working-directory: ./Performance
-          filename: performance-test.js
+          command: k6 run performance-test.js
 
