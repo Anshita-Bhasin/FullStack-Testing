@@ -1,4 +1,5 @@
-****Full STack Testing ***
+Full STack Testing
+==================
 
 
 1). Performance Testing - using k6
@@ -6,6 +7,7 @@
 3). API Testing - Cypress
 
 
-**CICD:
-**
+CICD
+====
+
 Github Actions
